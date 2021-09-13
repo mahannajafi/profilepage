@@ -7,7 +7,7 @@
 :root {
     --header-height: 3rem;
 
-    --hue-color: 250;
+    --hue-color: 150;
 
     /* ======Colors====== */
 
@@ -137,4 +137,42 @@ img{
 .grid{
     display: grid;
     gap: 1.5rem ;
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color) ;
+}
+
+/* ===================== NAV ================ */
+
+.nav{
+    max-width: 958px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo,
+.nav__toggle{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav__logo:hover{
+    color: var(--first-color);
+}
+
+.nav__toggle{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.nav__toggle:hover{
+    color: var(--first-color);
 }
