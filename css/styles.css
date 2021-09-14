@@ -15,6 +15,7 @@
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-clor-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-second:hsl(var(--hue-color), 69%, 61%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
     --text-color: hsl(var(--hue-color), 8%, 45%);
@@ -49,6 +50,14 @@
     --z-tooltip:10;
     --z-fixed: 100;
     --z-model: 1000;
+
+    --mb-0-25:.25rem;
+    --mb-0-5:.5rem;
+    --mb-0-75:.75rem;
+    --mb-1-0:1rem;
+    --mb-1-5:1.5rem;
+    --mb-2-0:2rem;
+    --mb-2-5:2.5rem;
     
 }
 
@@ -349,6 +358,16 @@ img{
     padding: .75rem 1rem;
 }
 
+.button--white{
+    background-color: #fff;
+    color: var(--first-color);
+
+}
+
+.button--white:hover{
+    background-color: #fff;
+}
+
 .button--link{
     padding: 0;
     background-color: transparent;
@@ -602,13 +621,78 @@ img{
 }
 
 /*==================== PORTFOLIO ====================*/
+.portfolio__container{
+    overflow: inherit;
+}
 
+.portfolio__content{
+    padding: 0 1.5rem;
+
+}
+
+.portfolio__img{
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.portfolio__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: .5rem;
+}
+
+.portfolio__description{
+    margin-bottom: .75rem;
+}
+
+.portfolio__button:hover{
+    transform: translateX(.25rem);
+}
+
+/* .swiper-button-prev::after,
+.swiper-button-next::after{
+    font-size: 1rem;
+    color: var(--first-color);
+}
+
+.swiper-button-prev{
+    left: 1rem;
+} */
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+    top: 21.5rem;
+}
 
 /*==================== PROJECT IN MIND ====================*/
+.project{
+    text-align: center;
+}
 
+.project__bg{
+    background-color:var(--first-color-second) ;
+    padding-top: 3rem;
 
-/*==================== TESTIMONIAL ====================*/
+}
 
+.project__title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.project__description{
+    margin-bottom: var(--mb-1-5);
+    margin-bottom: 2rem;
+}
+
+.project__title,
+.project__description{
+    color: #fff;
+}
+
+.project__img{
+    width: 332px;
+    justify-self: center;
+}
 
 /*==================== CONTACT ME ====================*/
 
