@@ -918,7 +918,7 @@ img{
         width: 200px;
     }
 
-
+    
 }
 
 /* For medium devices */
@@ -991,6 +991,14 @@ img{
     .nav__list{
         display: flex;
         column-gap: 2rem;
+        /* margin-top: 2rem; */
+    }
+    /* .nav__logo{
+        margin-top: 2rem;
+
+    } */
+    .nav{
+        margin-top:.75rem ;
     }
     .nav__menu{
         margin-left: auto;
@@ -1119,6 +1127,29 @@ img{
 
 
 }
+@media screen and (min-width:958px){
+    .nav__logo{
+        font-size: var(--small-font-size);
+    }
+    .home__description,
+    .about__description,
+    .qualification__data,
+    .portfolio__description,
+    .project__description,
+    .footer__link,
+    .footer__social,
+    .contact__input
+    {
+        font-size: var(--smaller-font-size);
+    }
+    .home__title{
+        font-size: var(--h1-font-size);
+    }
+    .button{
+        font-size: 1.07rem;
+    }
+}
+
 /* For large devices */
 @media screen and (min-width:1024px){
     .header,
